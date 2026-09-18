@@ -1,0 +1,13 @@
+{
+  "name": "fbi-crypto-bank",
+  "version": "6.0.0",
+  "private": true,
+  "description": "FBI Crypto Bank research dashboard with Netlify API support and GitHub Pages static deployment.",
+  "scripts": {
+    "build": "node build.mjs",
+    "check": "node --check public/app.js && node --check public/pwa.js && node --check netlify/functions/crypto-prices.js && node --check build.mjs && npm run build"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
